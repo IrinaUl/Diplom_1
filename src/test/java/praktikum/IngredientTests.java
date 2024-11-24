@@ -46,16 +46,16 @@ public class IngredientTests {
 
     @Test
     public void checkNameIngredient() {
-        Assert.assertEquals("Ошибка названия ингредиента", name, ingredient.getName());
+        Assert.assertEquals("Названия ингредиентов не совпадают", name, ingredient.getName());
     }
 
     @Test
     public void checkPriceIngredient() {
-        Assert.assertEquals("Ошибка цены ингредиента", price, ingredient.getPrice(), 0);
+        Assert.assertEquals("Цены не совпадают", price, ingredient.getPrice(), 0);
     }
 
     @Test
     public void checkTypeIngredient() {
-        Assert.assertEquals("Неизвестный ингредиент", name, ingredient.getName());
+        Assert.assertEquals("Неизвестный ингредиент", type, ingredient.getType());
     }
 }
