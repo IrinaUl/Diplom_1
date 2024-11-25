@@ -10,6 +10,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTests {
+    private static final float DELTA = 0;
     private static final float PRICE_BUN = 100F;
     private static final float PRICE_INGREDIENT = 100F;
     private static final float PRICE_INGREDIENT_FIRST = 200F;
@@ -80,7 +81,7 @@ public class BurgerTests {
         burger.setBuns(bun);
         burger.addIngredient(ingredient);
         burger.addIngredient(ingredientFirst);
-        Assert.assertEquals("Цены не совпадают", TOTAL_PRICE, burger.getPrice(), 0);
+        Assert.assertEquals("Цены не совпадают", TOTAL_PRICE, burger.getPrice(), DELTA);
     }
 
     @Test
