@@ -3,7 +3,6 @@ package praktikum;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.internal.matchers.NotNull;
 
 import java.util.List;
 

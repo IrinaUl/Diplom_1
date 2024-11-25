@@ -10,19 +10,19 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTests {
-    private final float PRICE_BUN = 100F;
-    private final float PRICE_INGREDIENT = 100F;
-    private final float PRICE_INGREDIENT_FIRST = 200F;
-    private final float TOTAL_PRICE = PRICE_BUN * 2 + PRICE_INGREDIENT + PRICE_INGREDIENT_FIRST;
+    private static final float PRICE_BUN = 100F;
+    private static final float PRICE_INGREDIENT = 100F;
+    private static final float PRICE_INGREDIENT_FIRST = 200F;
+    private static final float TOTAL_PRICE = PRICE_BUN * 2 + PRICE_INGREDIENT + PRICE_INGREDIENT_FIRST;
 
-    private final String NAME_BUN = "black bun";
-    private final String NAME_INGREDIENT = "hot sauce";
-    private final String NAME_INGREDIENT_FIRST = "dinosaur";
+    private static final String NAME_BUN = "black bun";
+    private static final String NAME_INGREDIENT = "hot sauce";
+    private static final String NAME_INGREDIENT_FIRST = "dinosaur";
 
-    private final IngredientType TYPE_INGREDIENT = IngredientType.SAUCE;
-    private final IngredientType TYPE_INGREDIENT_FIRST = IngredientType.FILLING;
+    private static final IngredientType TYPE_INGREDIENT = IngredientType.SAUCE;
+    private static final IngredientType TYPE_INGREDIENT_FIRST = IngredientType.FILLING;
 
-    private final String RECEIPT = String.format("(==== %s ====)%n= %s %s =%n= %s %s =%n(==== %s ====)%n%nPrice: %f%n", NAME_BUN, TYPE_INGREDIENT.toString().toLowerCase(), NAME_INGREDIENT, TYPE_INGREDIENT_FIRST.toString().toLowerCase(), NAME_INGREDIENT_FIRST, NAME_BUN, TOTAL_PRICE);
+    private static final String RECEIPT = String.format("(==== %s ====)%n= %s %s =%n= %s %s =%n(==== %s ====)%n%nPrice: %f%n", NAME_BUN, TYPE_INGREDIENT.toString().toLowerCase(), NAME_INGREDIENT, TYPE_INGREDIENT_FIRST.toString().toLowerCase(), NAME_INGREDIENT_FIRST, NAME_BUN, TOTAL_PRICE);
 
     Burger burger;
 

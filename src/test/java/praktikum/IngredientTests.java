@@ -11,6 +11,8 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class IngredientTests {
+    private static final float DELTA = 0;
+
     private final String name;
     private final float price;
     private final IngredientType type;
@@ -51,7 +53,7 @@ public class IngredientTests {
 
     @Test
     public void checkPriceIngredient() {
-        Assert.assertEquals("Цены не совпадают", price, ingredient.getPrice(), 0);
+        Assert.assertEquals("Цены не совпадают", price, ingredient.getPrice(), DELTA);
     }
 
     @Test

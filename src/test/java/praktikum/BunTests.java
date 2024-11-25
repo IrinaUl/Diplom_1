@@ -11,6 +11,7 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class BunTests {
+    private static final float DELTA = 0;
     private final String name;
     private final float price;
     private Bun bun;
@@ -47,7 +48,7 @@ public class BunTests {
 
     @Test
     public void checkPriceBun() {
-        Assert.assertEquals("Ошибка цены булочки", price, bun.getPrice(), 0);
+        Assert.assertEquals("Ошибка цены булочки", price, bun.getPrice(), DELTA);
     }
 }
 
